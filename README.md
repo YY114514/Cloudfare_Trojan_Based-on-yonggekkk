@@ -1,8 +1,9 @@
-对pages部署优化
+#对pages部署优化
 |基于
 [(https://github.com/yonggekkk/Cloudflare_vless_trojan)|，](https://github.com/yonggekkk/Cloudflare_vless_trojan)
-重点优化了B站，修改增加了部分规则
+#重点优化了B站，修改增加了部分规则
 （以下为直接引用，也可直接通过以上链接访问）
+
 # Cloudflare-workers/pages代理脚本
 ### 本项目仅支持本地化部署
 ### 本项目配置都为本地化编辑，不使用订阅器、订阅转换等第三方外链引用，无需担心节点订阅被外链作者查看
