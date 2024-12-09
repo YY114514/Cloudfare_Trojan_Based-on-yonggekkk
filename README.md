@@ -1,12 +1,12 @@
 对pages部署优化
 
 基于
-[(https://github.com/yonggekkk/Cloudflare_vless_trojan)](https://github.com/yonggekkk/Cloudflare_vless_trojan)
+[https://github.com/yonggekkk/Cloudflare_vless_trojan](https://github.com/yonggekkk/Cloudflare_vless_trojan)
 
 重点优化了B站，修改增加了部分规则
 （以下为直接引用，也可直接通过以上链接访问）
 
-部署时请直接下载pages.main文件夹，替换掉原甬哥的[(Vless_workers_pages)](https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Vless_workers_pages)文件夹即可
+部署时请直接下载[pages.main](https://github.com/YY114514/Cloudfare_Vless-yonggekkk-B-/tree/main/pages-main)文件夹，替换掉原甬哥的[Vless_workers_pages](https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Vless_workers_pages)文件夹即可
 
 # Cloudflare-workers/pages代理脚本
 ### 本项目仅支持本地化部署
