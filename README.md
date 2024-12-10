@@ -5,7 +5,7 @@
 ------------------------------------------------------------------------------------------
 重点优化了B站，修改增加了部分规则
 ------------------------------------------------------------------------------------------
-部署时请直接下载[_worker.js](https://github.com/YY114514/Cloudfare_vless_Based-on-yonggekkk/blob/main/_worker.js)文件，替换掉原[@yonggekkk](https://github.com/yonggekkk)的[Vless_workers_pages](https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Vless_workers_pages)文件夹内同名文件即可
+部署时请直接下载[pages.main](https://github.com/YY114514/Cloudfare_vless_Based-on-yonggekkk/tree/main/pages-main)文件，替换掉原[@yonggekkk](https://github.com/yonggekkk)的[Vless_workers_pages](https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Vless_workers_pages)文件夹即可
 ------------------------------------------------------------------------------------------
 以下为[@yonggekkk](https://github.com/yonggekkk)在该项目的原文引用，也可通过第二行项目地址访问
 ------------------------------------------------------------------------------------------
