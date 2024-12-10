@@ -1,4 +1,4 @@
-对pages部署优化
+对pages部署和woerkers部署均进行优化
 ------------------------------------------------------------------------------------------
 基于
 [https://github.com/yonggekkk/Cloudflare_vless_trojan](https://github.com/yonggekkk/Cloudflare_vless_trojan)
