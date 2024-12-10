@@ -6,7 +6,7 @@ import { connect } from "cloudflare:sockets";
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = "86c50e3a-5b87-49dd-bd20-03c7f2735e40";
 
-const proxyIPs = ["ts.hpc.tw"]; //ts.hpc.tw edgetunnel.anycast.eu.org bestproxy.onecf.eu.org cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org proxy.xxxxxxxx.tk
+const proxyIPs = ["ts.hpc.tw"]; //141.147.147.180 ts.hpc.tw edgetunnel.anycast.eu.org bestproxy.onecf.eu.org cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org proxy.xxxxxxxx.tk
 const cn_hostnames = [''];
 let CDNIP = 'www.visa.com.sg'
 // http_ip
@@ -2104,6 +2104,99 @@ rules:
   - PROCESS-NAME,cfnat-windows-arm64.exe,全球直连
   - PROCESS-NAME,cfnat-windows7-386.exe,全球直连
   - PROCESS-NAME,cfnat-windows7-amd64.exe,全球直连
+  - DOMAIN-KEYWORD,openai, 选择代理
+  - DOMAIN-SUFFIX,auth0.com, 选择代理
+  - DOMAIN-SUFFIX,challenges.cloudflare.com, 选择代理
+  - DOMAIN-SUFFIX,chatgpt.com, 选择代理
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com, 选择代理
+  - DOMAIN-SUFFIX,events.statsigapi.net, 选择代理
+  - DOMAIN-SUFFIX,featuregates.org, 选择代理
+  - DOMAIN-SUFFIX,identrust.com, 选择代理
+  - DOMAIN-SUFFIX,intercom.io, 选择代理
+  - DOMAIN-SUFFIX,intercomcdn.com, 选择代理
+  - DOMAIN-SUFFIX,oaistatic.com, 选择代理
+  - DOMAIN-SUFFIX,oaiusercontent.com, 选择代理
+  - DOMAIN-SUFFIX,openai.com, 选择代理
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net, 选择代理
+  - DOMAIN-SUFFIX,sentry.io, 选择代理
+  - DOMAIN-SUFFIX,stripe.com, 选择代理
+  - DOMAIN-KEYWORD,openai, 选择代理
+  - DOMAIN-SUFFIX,AI.com, 选择代理
+  - DOMAIN-SUFFIX,cdn.auth0.com, 选择代理
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net, 选择代理
+  - DOMAIN-SUFFIX,opendns.com, 选择代理
+  - DOMAIN-SUFFIX,bing.com, 选择代理
+  - DOMAIN-SUFFIX,civitai.com, 选择代理
+  - DOMAIN,bard.google.com, 选择代理
+  - DOMAIN,ai.google.dev, 选择代理
+  - DOMAIN,gemini.google.com, 选择代理
+  - DOMAIN-SUFFIX,googleapis.com, 选择代理
+  - DOMAIN-SUFFIX,sentry.io, 选择代理
+  - DOMAIN-SUFFIX,intercom.io, 选择代理
+  - DOMAIN-SUFFIX,featuregates.org, 选择代理
+  - DOMAIN-SUFFIX,statsigapi.net, 选择代理
+  - DOMAIN-SUFFIX,claude.ai, 选择代理
+  - DOMAIN-SUFFIX,Anthropic.com, 选择代理
+  - DOMAIN-SUFFIX,opera-api.com, 选择代理
+  - DOMAIN-SUFFIX,aistudio.google.com, 选择代理
+  - DOMAIN-SUFFIX,ciciai.com, 选择代理
+  - DOMAIN-KEYWORD,chatgpt, 选择代理
+  - DOMAIN,api.msn.com, 选择代理
+  - DOMAIN,api.statsig.com, 选择代理
+  - DOMAIN,assets.msn.com, 选择代理
+  - DOMAIN,browser-intake-datadoghq.com, 选择代理
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net, 选择代理
+  - DOMAIN,copilot.microsoft.com, 选择代理
+  - DOMAIN,gateway.bingviz.microsoft.net, 选择代理
+  - DOMAIN,gateway.bingviz.microsoftapp.net, 选择代理
+  - DOMAIN,in.appcenter.ms, 选择代理
+  - DOMAIN,location.microsoft.com, 选择代理
+  - DOMAIN,odc.officeapps.live.com, 选择代理
+  - DOMAIN,openai-api.arkoselabs.com, 选择代理
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net, 选择代理
+  - DOMAIN,production-openaicom-storage.azureedge.net, 选择代理
+  - DOMAIN,r.bing.com, 选择代理
+  - DOMAIN,self.events.data.microsoft.com, 选择代理
+  - DOMAIN,services.bingapis.com, 选择代理
+  - DOMAIN,static.cloudflareinsights.com, 选择代理
+  - DOMAIN,sydney.bing.com, 选择代理
+  - DOMAIN,www.bing.com, 选择代理
+  - DOMAIN-SUFFIX,algolia.net, 选择代理
+  - DOMAIN-SUFFIX,api.microsoftapp.net, 选择代理
+  - DOMAIN-SUFFIX,auth0.com, 选择代理
+  - DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io, 选择代理
+  - DOMAIN-SUFFIX,challenges.cloudflare.com, 选择代理
+  - DOMAIN-SUFFIX,chatgpt.com, 选择代理
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud, 选择代理
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com, 选择代理
+  - DOMAIN-SUFFIX,edgeservices.bing.com, 选择代理
+  - DOMAIN-SUFFIX,events.statsigapi.net, 选择代理
+  - DOMAIN-SUFFIX,featuregates.org, 选择代理
+  - DOMAIN-SUFFIX,host.livekit.cloud, 选择代理
+  - DOMAIN-SUFFIX,identrust.com, 选择代理
+  - DOMAIN-SUFFIX,intercom.io, 选择代理
+  - DOMAIN-SUFFIX,intercomcdn.com, 选择代理
+  - DOMAIN-SUFFIX,launchdarkly.com, 选择代理
+  - DOMAIN-SUFFIX,oaistatic.com, 选择代理
+  - DOMAIN-SUFFIX,oaiusercontent.com, 选择代理
+  - DOMAIN-SUFFIX,observeit.net, 选择代理
+  - DOMAIN-SUFFIX,openai.com, 选择代理
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net, 选择代理
+  - DOMAIN-SUFFIX,openaicom.imgix.net, 选择代理
+  - DOMAIN-SUFFIX,segment.io, 选择代理
+  - DOMAIN-SUFFIX,sentry.io, 选择代理
+  - DOMAIN-SUFFIX,stripe.com, 选择代理
+  - DOMAIN-SUFFIX,turn.livekit.cloud, 选择代理
+  - DOMAIN-KEYWORD,openaicom-api, 选择代理
+  - IP-CIDR,24.199.123.28/32, 选择代理,no-resolve
+  - IP-CIDR,64.23.132.171/32, 选择代理,no-resolve
+  - DOMAIN-KEYWORD,cocopilot, 选择代理
+  - DOMAIN,api.github.com, 选择代理
+  - DOMAIN,copilot-proxy.githubusercontent.com, 选择代理
+  - DOMAIN,api.githubcopilot.com, 选择代理
+  - DOMAIN,api.individual.githubcopilot.com, 选择代理
+  - DOMAIN-SUFFIX,anthropic.com, 选择代理
+  - DOMAIN-SUFFIX,claude.ai, 选择代理
   - PROCESS-NAME,colo-android-arm64,全球直连
   - PROCESS-NAME,colo-darwin-amd64,全球直连
   - PROCESS-NAME,colo-darwin-arm64,全球直连
@@ -4026,99 +4119,6 @@ rules:
   - IP-CIDR6,2001:67c:4e8::/48,选择代理,no-resolve
   - IP-CIDR6,2001:b28:f23d::/48,选择代理,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,选择代理,no-resolve
-  - DOMAIN-KEYWORD,openai,选择代理
-  - DOMAIN-SUFFIX,auth0.com,选择代理
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,选择代理
-  - DOMAIN-SUFFIX,chatgpt.com,选择代理
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,选择代理
-  - DOMAIN-SUFFIX,events.statsigapi.net,选择代理
-  - DOMAIN-SUFFIX,featuregates.org,选择代理
-  - DOMAIN-SUFFIX,identrust.com,选择代理
-  - DOMAIN-SUFFIX,intercom.io,选择代理
-  - DOMAIN-SUFFIX,intercomcdn.com,选择代理
-  - DOMAIN-SUFFIX,oaistatic.com,选择代理
-  - DOMAIN-SUFFIX,oaiusercontent.com,选择代理
-  - DOMAIN-SUFFIX,openai.com,选择代理
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,选择代理
-  - DOMAIN-SUFFIX,sentry.io,选择代理
-  - DOMAIN-SUFFIX,stripe.com,选择代理
-  - DOMAIN-KEYWORD,openai,选择代理
-  - DOMAIN-SUFFIX,AI.com,选择代理
-  - DOMAIN-SUFFIX,cdn.auth0.com,选择代理
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,选择代理
-  - DOMAIN-SUFFIX,opendns.com,选择代理
-  - DOMAIN-SUFFIX,bing.com,选择代理
-  - DOMAIN-SUFFIX,civitai.com,选择代理
-  - DOMAIN,bard.google.com,选择代理
-  - DOMAIN,ai.google.dev,选择代理
-  - DOMAIN,gemini.google.com,选择代理
-  - DOMAIN-SUFFIX,googleapis.com,选择代理
-  - DOMAIN-SUFFIX,sentry.io,选择代理
-  - DOMAIN-SUFFIX,intercom.io,选择代理
-  - DOMAIN-SUFFIX,featuregates.org,选择代理
-  - DOMAIN-SUFFIX,statsigapi.net,选择代理
-  - DOMAIN-SUFFIX,claude.ai,选择代理
-  - DOMAIN-SUFFIX,Anthropic.com,选择代理
-  - DOMAIN-SUFFIX,opera-api.com,选择代理
-  - DOMAIN-SUFFIX,aistudio.google.com,选择代理
-  - DOMAIN-SUFFIX,ciciai.com,选择代理
-  - DOMAIN-KEYWORD,chatgpt,选择代理
-  - DOMAIN,api.msn.com,选择代理
-  - DOMAIN,api.statsig.com,选择代理
-  - DOMAIN,assets.msn.com,选择代理
-  - DOMAIN,browser-intake-datadoghq.com,选择代理
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net,选择代理
-  - DOMAIN,copilot.microsoft.com,选择代理
-  - DOMAIN,gateway.bingviz.microsoft.net,选择代理
-  - DOMAIN,gateway.bingviz.microsoftapp.net,选择代理
-  - DOMAIN,in.appcenter.ms,选择代理
-  - DOMAIN,location.microsoft.com,选择代理
-  - DOMAIN,odc.officeapps.live.com,选择代理
-  - DOMAIN,openai-api.arkoselabs.com,选择代理
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,选择代理
-  - DOMAIN,production-openaicom-storage.azureedge.net,选择代理
-  - DOMAIN,r.bing.com,选择代理
-  - DOMAIN,self.events.data.microsoft.com,选择代理
-  - DOMAIN,services.bingapis.com,选择代理
-  - DOMAIN,static.cloudflareinsights.com,选择代理
-  - DOMAIN,sydney.bing.com,选择代理
-  - DOMAIN,www.bing.com,选择代理
-  - DOMAIN-SUFFIX,algolia.net,选择代理
-  - DOMAIN-SUFFIX,api.microsoftapp.net,选择代理
-  - DOMAIN-SUFFIX,auth0.com,选择代理
-  - DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io,选择代理
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,选择代理
-  - DOMAIN-SUFFIX,chatgpt.com,选择代理
-  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,选择代理
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,选择代理
-  - DOMAIN-SUFFIX,edgeservices.bing.com,选择代理
-  - DOMAIN-SUFFIX,events.statsigapi.net,选择代理
-  - DOMAIN-SUFFIX,featuregates.org,选择代理
-  - DOMAIN-SUFFIX,host.livekit.cloud,选择代理
-  - DOMAIN-SUFFIX,identrust.com,选择代理
-  - DOMAIN-SUFFIX,intercom.io,选择代理
-  - DOMAIN-SUFFIX,intercomcdn.com,选择代理
-  - DOMAIN-SUFFIX,launchdarkly.com,选择代理
-  - DOMAIN-SUFFIX,oaistatic.com,选择代理
-  - DOMAIN-SUFFIX,oaiusercontent.com,选择代理
-  - DOMAIN-SUFFIX,observeit.net,选择代理
-  - DOMAIN-SUFFIX,openai.com,选择代理
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,选择代理
-  - DOMAIN-SUFFIX,openaicom.imgix.net,选择代理
-  - DOMAIN-SUFFIX,segment.io,选择代理
-  - DOMAIN-SUFFIX,sentry.io,选择代理
-  - DOMAIN-SUFFIX,stripe.com,选择代理
-  - DOMAIN-SUFFIX,turn.livekit.cloud,选择代理
-  - DOMAIN-KEYWORD,openaicom-api,选择代理
-  - IP-CIDR,24.199.123.28/32,选择代理,no-resolve
-  - IP-CIDR,64.23.132.171/32,选择代理,no-resolve
-  - DOMAIN-KEYWORD,cocopilot,选择代理
-  - DOMAIN,api.github.com,选择代理
-  - DOMAIN,copilot-proxy.githubusercontent.com,选择代理
-  - DOMAIN,api.githubcopilot.com,选择代理
-  - DOMAIN,api.individual.githubcopilot.com,选择代理
-  - DOMAIN-SUFFIX,anthropic.com,选择代理
-  - DOMAIN-SUFFIX,claude.ai,选择代理
   - DOMAIN-SUFFIX,163yun.com,全球直连
   - DOMAIN-SUFFIX,api.iplay.163.com,全球直连
   - DOMAIN-SUFFIX,hz.netease.com,全球直连
@@ -4156,7 +4156,7 @@ rules:
   - IP-CIDR,223.252.199.66/31,全球直连,no-resolve
   - IP-CIDR,223.252.199.66/32,全球直连,no-resolve
   - IP-CIDR,223.252.199.67/32,全球直连,no-resolve
-    - DOMAIN-SUFFIX,epicgames.com,选择代理
+  - DOMAIN-SUFFIX,epicgames.com,选择代理
   - DOMAIN-SUFFIX,epicgames.dev,选择代理
   - DOMAIN-SUFFIX,helpshift.com,选择代理
   - DOMAIN-SUFFIX,paragon.com,选择代理
@@ -12917,7 +12917,6 @@ rules:
   - DOMAIN,6c2odkl2f7.adobestats.io,🛑 广告拦截
   - DOMAIN,dzx1z8to3i.adobestats.io,🛑 广告拦截
   - DOMAIN,8xi6eh0lbe.adobestats.io,🛑 广告拦截
-  - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,选择代理`
 }
