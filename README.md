@@ -3,7 +3,7 @@
 基于
 [https://github.com/yonggekkk/Cloudflare_vless_trojan](https://github.com/yonggekkk/Cloudflare_vless_trojan)
 ------------------------------------------------------------------------------------------
-重点优化了B站，修改增加了部分规则
+重点优化了B站，修改增加了部分规则（1万多条也是部分，老铁们没毛病）
 ------------------------------------------------------------------------------------------
 部署时请直接下载[pages.main](https://github.com/YY114514/Cloudfare_vless_Based-on-yonggekkk/tree/main/pages-main)文件，替换掉原[@yonggekkk](https://github.com/yonggekkk)的[Vless_workers_pages](https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Vless_workers_pages)文件夹即可
 ------------------------------------------------------------------------------------------
