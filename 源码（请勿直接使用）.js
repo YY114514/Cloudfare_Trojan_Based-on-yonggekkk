@@ -2007,6 +2007,20 @@ proxies:
     headers:
       Host: ${hostName}
 
+- name: TW
+  type: vless
+  server: 210.61.97.241
+  port: 81
+  uuid: ${userID}
+  udp: false
+  tls: true
+  network: ws
+  servername: ${hostName}
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: ${hostName}
+
 proxy-groups:
 - name: 负载均衡
   type: load-balance
@@ -2045,12 +2059,14 @@ proxy-groups:
     - CF_V11_${IP11}_${PT11}
     - CF_V12_${IP12}_${PT12}
     - CF_V13_${IP13}_${PT13}
+    - TW
 
 - name: 哔哩哔哩
   type: select
   proxies:
     - DIRECT
     - 选择代理
+    - TW
 
 - name: 全球直连
   type: select
@@ -13027,7 +13043,8 @@ return `{
 				"CF_V10_${IP10}_${PT10}",
 				"CF_V11_${IP11}_${PT11}",
 				"CF_V12_${IP12}_${PT12}",
-				"CF_V13_${IP13}_${PT13}"
+				"CF_V13_${IP13}_${PT13}",
+        "TW"
 			  ]
 			},
 			{
@@ -13186,6 +13203,32 @@ return `{
 			  "type": "vless",
 			  "uuid": "${userID}"
 			},
+      {
+			  "server": "210.61.97.241",
+			  "server_port": 81,
+			  "tag": "TW",
+			  "tls": {
+				"enabled": true,
+				"server_name": "${hostName}",
+				"insecure": false,
+				"utls": {
+				  "enabled": true,
+				  "fingerprint": "random"
+				}
+			  },
+			  "packet_encoding": "packetaddr",
+			  "transport": {
+				"headers": {
+				  "Host": [
+					"${hostName}"
+				  ]
+				},
+				"path": "/?ed=2560",
+				"type": "ws"
+			  },
+			  "type": "vless",
+			  "uuid": "${userID}"
+			},
 			{
 			  "tag": "direct",
 			  "type": "direct"
@@ -13207,7 +13250,8 @@ return `{
 				"CF_V10_${IP10}_${PT10}",
 				"CF_V11_${IP11}_${PT11}",
 				"CF_V12_${IP12}_${PT12}",
-				"CF_V13_${IP13}_${PT13}"
+				"CF_V13_${IP13}_${PT13}",
+        "TW"
 			  ],
 			  "url": "https://www.gstatic.com/generate_204",
 			  "interval": "1m",
