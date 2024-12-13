@@ -43,6 +43,7 @@ let PT11 = '2083'
 let PT12 = '2087'
 let PT13 = '2096'
 
+
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 let proxyPort = proxyIP.includes(':') ? proxyIP.split(':')[1] : '443';
 
@@ -2021,6 +2022,90 @@ proxies:
     headers:
       Host: ${hostName}
 
+- name: LAX1
+  type: vless
+  server: 104.21.198.62
+  port: 2096
+  uuid: ${userID}
+  udp: false
+  tls: true
+  network: ws
+  servername: ${hostName}
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: ${hostName}
+
+- name: LAX2
+  type: vless
+  server: 162.159.45.219
+  port: 2096
+  uuid: ${userID}
+  udp: false
+  tls: true
+  network: ws
+  servername: ${hostName}
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: ${hostName}
+
+- name: HKG1
+  type: vless
+  server: 104.20.206.24
+  port: 2096
+  uuid: ${userID}
+  udp: false
+  tls: true
+  network: ws
+  servername: ${hostName}
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: ${hostName}
+
+- name: HKG2
+  type: vless
+  server: 172.67.187.174
+  port: 2096
+  uuid: ${userID}
+  udp: false
+  tls: true
+  network: ws
+  servername: ${hostName}
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: ${hostName}
+
+- name: AMS
+  type: vless
+  server: 162.159.160.204
+  port: 2096
+  uuid: ${userID}
+  udp: false
+  tls: true
+  network: ws
+  servername: ${hostName}
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: ${hostName}
+
+- name: LHR
+  type: vless
+  server: 162.159.81.154
+  port: 2096
+  uuid: ${userID}
+  udp: false
+  tls: true
+  network: ws
+  servername: ${hostName}
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: ${hostName}
+
 proxy-groups:
 - name: 负载均衡
   type: load-balance
@@ -2033,6 +2118,10 @@ proxy-groups:
     - CF_V11_${IP11}_${PT11}
     - CF_V12_${IP12}_${PT12}
     - CF_V13_${IP13}_${PT13}
+    - LAX1
+    - LAX2
+    - AMS
+    - LHR
 
 - name: 自动选择
   type: url-test
@@ -2046,6 +2135,10 @@ proxy-groups:
     - CF_V11_${IP11}_${PT11}
     - CF_V12_${IP12}_${PT12}
     - CF_V13_${IP13}_${PT13}
+    - LAX1
+    - LAX2
+    - AMS
+    - LHR
 
 - name: 选择代理
   type: select
@@ -2060,6 +2153,12 @@ proxy-groups:
     - CF_V12_${IP12}_${PT12}
     - CF_V13_${IP13}_${PT13}
     - TW
+    - LAX1
+    - LAX2
+    - HKG1
+    - HKG2
+    - AMS
+    - LHR
 
 - name: 哔哩哔哩
   type: select
@@ -2067,6 +2166,8 @@ proxy-groups:
     - DIRECT
     - 选择代理
     - TW
+    - HKG1
+    - HKG2
 
 - name: 全球直连
   type: select
@@ -13044,7 +13145,13 @@ return `{
 				"CF_V11_${IP11}_${PT11}",
 				"CF_V12_${IP12}_${PT12}",
 				"CF_V13_${IP13}_${PT13}",
-        "TW"
+        "TW",
+        "LAX1",
+        "LAX2",
+        "HKG1",
+        "HKG2",
+        "AMS",
+        "LHR"
 			  ]
 			},
 			{
@@ -13203,10 +13310,88 @@ return `{
 			  "type": "vless",
 			  "uuid": "${userID}"
 			},
-      {
+			{
 			  "server": "210.61.97.241",
 			  "server_port": 81,
 			  "tag": "TW",
+			  "tls": {
+				"enabled": true,
+				"server_name": "${hostName}",
+				"insecure": false,
+				"utls": {
+				  "enabled": true,
+				  "fingerprint": "random"
+				}
+			  },
+            {
+			  "server": "104.21.198.62",
+			  "server_port": 2096,
+			  "tag": "LAX1",
+			  "tls": {
+				"enabled": true,
+				"server_name": "${hostName}",
+				"insecure": false,
+				"utls": {
+				  "enabled": true,
+				  "fingerprint": "random"
+				}
+			  },
+            {
+			  "server": "162.159.45.219",
+			  "server_port": 2096,
+			  "tag": "LAX2",
+			  "tls": {
+				"enabled": true,
+				"server_name": "${hostName}",
+				"insecure": false,
+				"utls": {
+				  "enabled": true,
+				  "fingerprint": "random"
+				}
+			  },
+            {
+			  "server": "104.20.206.24",
+			  "server_port": 2096,
+			  "tag": "HKG1",
+			  "tls": {
+				"enabled": true,
+				"server_name": "${hostName}",
+				"insecure": false,
+				"utls": {
+				  "enabled": true,
+				  "fingerprint": "random"
+				}
+			  },
+            {
+			  "server": "172.67.187.174",
+			  "server_port": 2096,
+			  "tag": "HKG2",
+			  "tls": {
+				"enabled": true,
+				"server_name": "${hostName}",
+				"insecure": false,
+				"utls": {
+				  "enabled": true,
+				  "fingerprint": "random"
+				}
+			  },
+            {
+			  "server": "162.159.160.204",
+			  "server_port": 2096,
+			  "tag": "AMS",
+			  "tls": {
+				"enabled": true,
+				"server_name": "${hostName}",
+				"insecure": false,
+				"utls": {
+				  "enabled": true,
+				  "fingerprint": "random"
+				}
+			  },
+            {
+			  "server": "162.159.81.154",
+			  "server_port": 2096,
+			  "tag": "LHR",
 			  "tls": {
 				"enabled": true,
 				"server_name": "${hostName}",
