@@ -1,11 +1,11 @@
-对pages部署和woerkers部署均进行优化
+仅对pages部署和woerkers的clash部署均进行优化
 ------------------------------------------------------------------------------------------
 基于
 [https://github.com/yonggekkk/Cloudflare_vless_trojan](https://github.com/yonggekkk/Cloudflare_vless_trojan)
 ------------------------------------------------------------------------------------------
 重点优化了B站，修改增加了部分规则（1万多条也是部分，老铁们没毛病）
 ------------------------------------------------------------------------------------------
-部署时请直接下载[pages.main](https://github.com/YY114514/Cloudfare_vless_Based-on-yonggekkk/tree/main/pages-main)文件，替换掉原[@yonggekkk](https://github.com/yonggekkk)的[Vless_workers_pages](https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Vless_workers_pages)文件夹即可
+部署时请直接下载[pages.main](https://github.com/YY114514/Cloudfare_vless_Based-on-yonggekkk/tree/main/pages-main)文件，替换掉原[@yonggekkk](https://github.com/yonggekkk)的[Trojan_workers_pages](https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Trojan_workers_pages)文件夹即可
 ------------------------------------------------------------------------------------------
 以下为[@yonggekkk](https://github.com/yonggekkk)在该项目的原文引用，也可通过第二行项目地址访问
 ------------------------------------------------------------------------------------------
