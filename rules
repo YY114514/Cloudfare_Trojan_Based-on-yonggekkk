@@ -24,7 +24,6 @@ proxy-groups:
     tolerance: 50
   - name: BILI
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
-    url: https://www.bilibili.com/
     type: select
     proxies:
       - DC
