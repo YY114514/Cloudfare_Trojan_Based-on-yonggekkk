@@ -55,7 +55,7 @@ proxy-groups:
     type: url-test
     url: https://www.bilibili.com/
     include-all: true
-    filter: (?i)港|台|新北|彰化|TW|HK|hk|Hong Kong|HongKong|Taiwan
+    filter: (?i)港|台
     type: url-test
     interval: 300
     tolerance: 50
