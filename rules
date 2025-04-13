@@ -52,8 +52,6 @@ proxy-groups:
     tolerance: 50
   - name: 哔哩港澳
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
-    type: url-test
-    url: https://www.bilibili.com
     include-all: true
     filter: "(?i)港|台"
     type: url-test
