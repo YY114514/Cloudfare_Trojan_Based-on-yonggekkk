@@ -62,7 +62,7 @@ proxy-groups:
   - name: 香港节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
     include-all: true
-    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    filter: (?i)港|HK|hk|Hong Kong|HongKong
     type: url-test
     interval: 300
     tolerance: 50
