@@ -53,7 +53,7 @@ proxy-groups:
   - name: 哔哩港澳
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
     include-all: true
-    filter: "(?i)港|台港|HK|hk|Hong Kong|HongKong|新北|彰化|TW|Taiwan"
+    filter: (?i)港|台|新北|彰化|TW|HK|hk|Hong Kong|HongKong|Taiwan
     type: url-test
     url: https://www.bilibili.com
     interval: 300
