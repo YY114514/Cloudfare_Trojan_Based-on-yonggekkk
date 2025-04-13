@@ -7,7 +7,7 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili_3.png
     type: select
     proxies:
-      - 哔哩哔哩港澳台
+      - 哔哩港澳
       - 香港节点
       - 台湾节点
       - DIRECT
@@ -50,7 +50,7 @@ proxy-groups:
     include-all: true
     interval: 300
     tolerance: 50
-  - name: 哔哩哔哩港澳台
+  - name: 哔哩港澳
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
     type: url-test
     url: https://www.bilibili.com/
