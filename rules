@@ -14,7 +14,7 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 韩国节点
-      - 手动选择
+      - MANUAL
       - DIRECT
   - name: 哔哩哔哩
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili_3.png
