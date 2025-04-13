@@ -1,4 +1,8 @@
 proxy-groups:
+  - name: 手动选择
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+    include-all: true
+    type: select
   - name: SELECT
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
@@ -20,10 +24,6 @@ proxy-groups:
       - 香港节点
       - 台湾节点
       - DIRECT
-  - name: 手动选择
-    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
-    include-all: true
-    type: select
   - name: DC
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
