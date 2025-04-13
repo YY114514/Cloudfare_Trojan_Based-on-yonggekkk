@@ -49,8 +49,8 @@ proxy-groups:
     type: url-test
     url: https://www.google.com
     include-all: true
-    interval: 30
-    tolerance: 20
+    interval: 60
+    tolerance: 5
   - name: 哔哩港台
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
     include-all: true
