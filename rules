@@ -24,15 +24,6 @@ proxy-groups:
       - 韩国节点
       - SELECT
       - DIRECT
-  - name: 哔哩哔哩港澳台
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
-    type: url-test
-    url: https://www.bilibili.com/
-    include-all: true
-    filter: (?i)港|台|新北|彰化|TW|HK|hk|Hong Kong|HongKong|Taiwan|hongkong
-    type: url-test
-    interval: 300
-    tolerance: 50
   - name: DC
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
@@ -57,6 +48,15 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: url-test
     include-all: true
+    interval: 300
+    tolerance: 50
+  - name: 哔哩哔哩港澳台
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+    type: url-test
+    url: https://www.bilibili.com/
+    include-all: true
+    filter: (?i)港|台|新北|彰化|TW|HK|hk|Hong Kong|HongKong|Taiwan
+    type: url-test
     interval: 300
     tolerance: 50
   - name: 香港节点
