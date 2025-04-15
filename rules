@@ -10,10 +10,8 @@ proxy-groups:
       - 自动选择
       - 香港节点
       - 台湾节点
-      - 狮城节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - MANUAL
       - DIRECT
   - name: 哔哩哔哩
@@ -49,15 +47,15 @@ proxy-groups:
     type: url-test
     url: https://www.google.com
     include-all: true
-    interval: 60
+    interval: 30
     tolerance: 5
   - name: 哔哩港台
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
     include-all: true
-    filter: (?i)港|台|新北|彰化|TW|HK|hk|Hong Kong|HongKong|Taiwan
+    filter: (?i)港|台|新北|彰化|TW|HK|hk|Taiwan|Hong Kong|HongKong
     type: url-test
     url: https://www.bilibili.com
-    interval: 60
+    interval: 30
     tolerance: 5
   - name: 香港节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
@@ -65,7 +63,7 @@ proxy-groups:
     filter: (?i)港|HK|hk|Hong Kong|HongKong
     type: url-test
     url: https://www.google.com
-    interval: 60
+    interval: 30
     tolerance: 5
   - name: 日本节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
@@ -73,7 +71,7 @@ proxy-groups:
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
     type: url-test
     url: https://www.google.com
-    interval: 60
+    interval: 30
     tolerance: 5
   - name: 美国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
@@ -81,7 +79,7 @@ proxy-groups:
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: url-test
     url: https://www.google.com
-    interval: 60
+    interval: 30
     tolerance: 5
   - name: 台湾节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
@@ -89,23 +87,7 @@ proxy-groups:
     filter: (?i)台|新北|彰化|TW|Taiwan
     type: url-test
     url: https://www.google.com
-    interval: 60
-    tolerance: 5
-  - name: 狮城节点
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
-    include-all: true
-    filter: (?i)新加坡|坡|狮城|SG|Singapore
-    type: url-test
-    url: https://www.google.com
-    interval: 60
-    tolerance: 5
-  - name: 韩国节点
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
-    include-all: true
-    filter: (?i)KR|Korea|KOR|首尔|韩|韓
-    type: url-test
-    url: https://www.google.com
-    interval: 60
+    interval: 30
     tolerance: 5
 rules:
   - PROCESS-NAME,cfnat-android-arm64,DC
