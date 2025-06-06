@@ -20,6 +20,12 @@ proxy-groups:
     proxies:
       - 哔哩港台
       - DIRECT
+  - name: 哔哩港台
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+    include-all: true
+    filter: (?i)港|台|新北|彰化|TW|HK|hk|Taiwan|Hong Kong|HongKong
+    type: select
+    url: https://www.bilibili.com
   - name: DC
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
@@ -27,14 +33,6 @@ proxy-groups:
       - DIRECT
       - SELECT
       - 自动选择
-  - name: 哔哩港台
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
-    include-all: true
-    filter: (?i)港|台|新北|彰化|TW|HK|hk|Taiwan|Hong Kong|HongKong
-    type: select
-    url: https://www.bilibili.com
-    interval: 300
-    tolerance: 50
   - name: AD-BAN
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
     type: select
