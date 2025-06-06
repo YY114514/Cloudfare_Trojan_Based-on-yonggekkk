@@ -19,8 +19,6 @@ proxy-groups:
     type: select
     proxies:
       - 哔哩港台
-      - 香港节点
-      - 台湾节点
       - DIRECT
   - name: DC
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
@@ -35,8 +33,8 @@ proxy-groups:
     filter: (?i)港|台|新北|彰化|TW|HK|hk|Taiwan|Hong Kong|HongKong
     type: select
     url: https://www.bilibili.com
-    interval: 30
-    tolerance: 5
+    interval: 300
+    tolerance: 50
   - name: AD-BAN
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
     type: select
