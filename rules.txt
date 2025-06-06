@@ -1,15 +1,4 @@
 proxy-groups:
-  - name: SELECT
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
-    type: select
-    proxies:
-      - 自动选择
-      - 香港节点
-      - 台湾节点
-      - 日本节点
-      - 美国节点
-      - MANUAL
-      - DIRECT
   - name: MANUAL
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
@@ -28,6 +17,17 @@ proxy-groups:
     url: https://www.bilibili.com
     interval: 30
     tolerance: 5
+  - name: SELECT
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    type: select
+    proxies:
+      - 自动选择
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - MANUAL
+      - DIRECT
   - name: DC
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
