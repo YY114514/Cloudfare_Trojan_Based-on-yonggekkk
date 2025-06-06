@@ -3,12 +3,12 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
     proxies:
-      - MANUAL
       - 自动选择
       - 香港节点
       - 台湾节点
       - 日本节点
       - 美国节点
+      - MANUAL
       - DIRECT
   - name: MANUAL
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
