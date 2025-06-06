@@ -10,7 +10,7 @@ proxy-groups:
       - 港台
       - DIRECT
   - name: 港台
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili_4.png
     include-all: true
     filter: (?i)港|台|新北|彰化|TW|HK|hk|Taiwan|Hong Kong|HongKong
     type: select
@@ -21,12 +21,12 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
     proxies:
+      - MANUAL
       - 自动选择
       - 香港节点
       - 台湾节点
       - 日本节点
       - 美国节点
-      - MANUAL
       - DIRECT
   - name: DC
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
