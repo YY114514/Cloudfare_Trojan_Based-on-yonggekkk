@@ -19,6 +19,7 @@ proxy-groups:
     type: select
     proxies:
       - 港台
+      - 港台自动
       - DIRECT
   - name: 港台
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili_4.png
@@ -46,6 +47,14 @@ proxy-groups:
     type: url-test
     url: https://www.google.com
     include-all: true
+    interval: 30
+    tolerance: 5
+  - name: 港台自动
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili_4.png
+    include-all: true
+    filter: (?i)港|台|新北|彰化|TW|HK|hk|Taiwan|Hong Kong|HongKong
+    type: url-test
+    url: https://www.bilibili.com
     interval: 30
     tolerance: 5
   - name: 香港节点
