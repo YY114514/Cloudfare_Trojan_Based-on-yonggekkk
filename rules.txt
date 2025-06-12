@@ -77,7 +77,7 @@ proxy-groups:
     interval: 30
     tolerance: 5
   - name: 其他
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Europe_Map.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/World_Map.png
     include-all: true
     exclude-filter: (?i)新加坡|SG|Singapore|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|韩国|汉城|首尔|JP|Japan|SK|Korea|法国|英国|芬兰|德国|荷兰|瑞士|意大利|波兰|France|UK|Germany|Poland|Switzerland|Italy|Netherland
     type: select
