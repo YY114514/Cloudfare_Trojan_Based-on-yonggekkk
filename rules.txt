@@ -4,6 +4,7 @@ proxy-groups:
     type: select
     proxies:
       - MANUAL
+      - DIRECT
       - 港台
       - 日韩
       - 狮城
