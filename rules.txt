@@ -14,6 +14,13 @@ proxy-groups:
       - 台湾节点
       - 日本节点
       - 美国节点
+  - name: MANUAL
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+    include-all: true
+    type: select
+    url: https://www.google.com
+    interval: 30
+    tolerance: 5
   - name: 港台
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/HKMTMedia.png
     include-all: true
@@ -26,13 +33,6 @@ proxy-groups:
       - 港台
       - 港台自动
       - DIRECT
-  - name: MANUAL
-    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
-    include-all: true
-    type: select
-    url: https://www.google.com
-    interval: 30
-    tolerance: 5
   - name: 日韩
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
     include-all: true
