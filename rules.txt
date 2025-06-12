@@ -33,17 +33,6 @@ proxy-groups:
     url: https://www.google.com
     interval: 30
     tolerance: 5
-  - name: SELECT
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
-    type: select
-    proxies:
-      - 自动选择
-      - TYPE
-      - 香港节点
-      - 台湾节点
-      - 日本节点
-      - 美国节点
-      - DIRECT
   - name: 日韩
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
     include-all: true
@@ -84,6 +73,17 @@ proxy-groups:
     url: https://www.google.com
     interval: 30
     tolerance: 5
+  - name: SELECT
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    type: select
+    proxies:
+      - 自动选择
+      - TYPE
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - DIRECT
   - name: DC
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
