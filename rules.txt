@@ -1,18 +1,23 @@
 proxy-groups:
-  - name: SELECT
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+  - name: TYPE
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/switch.png
     type: select
     proxies:
-      - 自动选择
+      - MANUAL
+      - 港台
+      - 日韩
+      - 狮城
+      - 欧洲
+      - 其他
+      - 美国
       - 香港节点
       - 台湾节点
       - 日本节点
       - 美国节点
-      - MANUAL
-      - DIRECT
-  - name: MANUAL
-    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+  - name: 港台
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/HKMTMedia.png
     include-all: true
+    filter: (?i)港|台|新北|彰化|TW|HK|hk|Taiwan|Hong Kong|HongKong
     type: select
   - name: 哔哩哔哩
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili_3.png
@@ -21,14 +26,64 @@ proxy-groups:
       - 港台
       - 港台自动
       - DIRECT
-  - name: 港台
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili_4.png
+  - name: MANUAL
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
-    filter: (?i)港|台|新北|彰化|TW|HK|hk|Taiwan|Hong Kong|HongKong
     type: select
-    url: https://www.bilibili.com
-    interval: 300
-    tolerance: 50
+    url: https://www.google.com
+    interval: 30
+    tolerance: 5
+  - name: SELECT
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    type: select
+    proxies:
+      - 自动选择
+      - TYPE
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - DIRECT
+  - name: 日韩
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
+    include-all: true
+    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|韩国|汉城|首尔|JP|Japan|SK|Korea
+    type: select
+    url: https://www.google.com
+    interval: 30
+    tolerance: 5
+  - name: 美国
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+    include-all: true
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+    type: select
+    url: https://www.google.com
+    interval: 30
+    tolerance: 5
+  - name: 狮城
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+    include-all: true
+    filter: (?i)新加坡|SG|Singapore
+    type: select
+    url: https://www.google.com
+    interval: 30
+    tolerance: 5
+  - name: 欧洲
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Europe_Map.png
+    include-all: true
+    filter: (?i)法国|英国|芬兰|德国|荷兰|瑞士|意大利|波兰|France|UK|Germany|Poland|Switzerland|Italy|Netherland
+    type: select
+    url: https://www.google.com
+    interval: 30
+    tolerance: 5
+  - name: 其他
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Europe_Map.png
+    include-all: true
+    exclude-filter: (?i)新加坡|SG|Singapore|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|韩国|汉城|首尔|JP|Japan|SK|Korea|法国|英国|芬兰|德国|荷兰|瑞士|意大利|波兰|France|UK|Germany|Poland|Switzerland|Italy|Netherland
+    type: select
+    url: https://www.google.com
+    interval: 30
+    tolerance: 5
   - name: DC
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
