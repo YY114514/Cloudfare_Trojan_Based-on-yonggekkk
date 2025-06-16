@@ -37,7 +37,7 @@ proxy-groups:
   - name: 日韩
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
     include-all: true
-    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|韩国|汉城|首尔|JP|Japan|SK|Korea
+    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|韩国|汉城|首尔|JP|Japan|KR|Korea
     type: select
     url: https://www.google.com
     interval: 30
@@ -61,7 +61,7 @@ proxy-groups:
   - name: 欧洲
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Europe_Map.png
     include-all: true
-    filter: (?i)法国|英国|芬兰|德国|荷兰|瑞士|意大利|波兰|France|UK|Germany|Poland|Switzerland|Italy|Netherland
+    filter: (?i)法国|英国|芬兰|德国|荷兰|瑞士|意大利|波兰|France|UK|Germany|Poland|Switzerland|Italy|Netherland|DE|FI|PL|NL|FR
     type: select
     url: https://www.google.com
     interval: 30
