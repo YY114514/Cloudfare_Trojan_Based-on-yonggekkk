@@ -1,5 +1,5 @@
 proxy-groups:
-  - name: TYPE
+  - name: TYPE-CHOOSE
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/switch.png
     type: select
     proxies:
