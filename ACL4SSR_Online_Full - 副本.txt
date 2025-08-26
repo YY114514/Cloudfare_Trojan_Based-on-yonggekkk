@@ -25,7 +25,7 @@ proxy-groups:
     include-all: true
     interval: 30
     tolerance: 5
-  - name: 📺 哔哩哔哩
+  - name: 哔哩哔哩
     type: select
     proxies:
       - 🎯 全球直连
