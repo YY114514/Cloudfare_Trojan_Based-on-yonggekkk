@@ -17,14 +17,6 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
-  - name: 🚀 手动切换
-    include-all: true
-    type: select
-  - name: ♻️ 自动选择
-    type: url-test
-    include-all: true
-    interval: 30
-    tolerance: 5
   - name: 📺 哔哩哔哩
     type: select
     proxies:
@@ -33,30 +25,9 @@ proxy-groups:
       - 其他地区
       - 🇨🇳 台湾节点
       - 🇭🇰 香港节点
-  - name: 🎯 全球直连
+  - name: 🚀 手动切换
+    include-all: true
     type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
-  - name: 🛑 广告拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - DIRECT
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
   - name: 港台节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/HKMTMedia.png
     include-all: true
@@ -102,6 +73,35 @@ proxy-groups:
     url: https://www.google.com
     interval: 30
     tolerance: 5
+  - name: ♻️ 自动选择
+    type: url-test
+    include-all: true
+    interval: 30
+    tolerance: 5
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: 🇭🇰 香港节点
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
