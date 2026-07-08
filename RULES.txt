@@ -25,6 +25,7 @@ proxy-groups:
       - 其他地区
       - 🇨🇳 台湾节点
       - 🇭🇰 香港节点
+      - 🚀 手动切换
   - name: 🚀 手动切换
     include-all: true
     type: select
